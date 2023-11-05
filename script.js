@@ -11,12 +11,14 @@ password.addEventListener('input', () => {
 });
 
 function passMatch() {
+    const notMatchText = document.querySelector('.password-catch');
     if (passwordConfirm.value !== password.value || password.value !== passwordConfirm.value) {
-        console.log('not matching');
         passwordConfirm.classList.add('error');
         password.classList.add('error');
+        notMatchText.classList.add('passmatch');
     } else if (passwordConfirm.value === password.value || password.value === passwordConfirm.value) {
         passwordConfirm.classList.remove('error');
         password.classList.remove('error');
+        notMatchText.classList.remove('passmatch');
     };
 };

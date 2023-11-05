@@ -76,6 +76,10 @@ h1 {
     box-shadow: 0px 5px 10px -8px;
 }
 
+.form-left {
+    position: relative;
+}
+
 .form-area p {
     text-align: center;
     padding-top: 20px;
@@ -125,15 +129,12 @@ h2 {
     border: rgb(233, 53, 53, 0.5);
 }
 
-#password::after {
-    content: 'Hello';
-    color: black;
-    background-color: red;
-    width: 25px;
-    height: 25px;
-    margin-top: 50px;
-    display: inline-block;
-    z-index: 99;
+.passmatch::after {
+    position: absolute;
+    content: '* Passwords do not match';
+    color: red;
+    font-size: 12px;
+    bottom: 10px;
 }
 
 button {
