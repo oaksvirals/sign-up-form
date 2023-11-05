@@ -16,9 +16,21 @@ function passMatch() {
         passwordConfirm.classList.add('error');
         password.classList.add('error');
         notMatchText.classList.add('passmatch');
+        disableButton();
     } else if (passwordConfirm.value === password.value || password.value === passwordConfirm.value) {
         passwordConfirm.classList.remove('error');
         password.classList.remove('error');
         notMatchText.classList.remove('passmatch');
+        enableButton();
     };
+};
+
+function disableButton() {
+    submitButton.disabled = true;
+    submitButton.textContent = 'Waiting for password...'
+};
+
+function enableButton() {
+    submitButton.disabled = false;
+    submitButton.textContent = 'Create Account'
 };

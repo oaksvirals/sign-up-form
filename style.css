@@ -154,9 +154,25 @@ button {
 button:hover {
     background-color: rgb(107, 142, 35, 0.5);
     transform: scale(0.95);
+    cursor: pointer;
+}
+
+button:disabled, button:disabled:hover {
+    background-color: rgb(235, 115, 115, 0.5);
+    transform: none;
+    cursor: auto;
 }
 
 .content-bottom p {
     margin-top: 25px;
     margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: olivedrab;
+}
+
+a:hover {
+    color: rgb(107, 142, 35, 0.5);
 }
