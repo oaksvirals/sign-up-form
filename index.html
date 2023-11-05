@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Sign Up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="img-box">
+                <img src="./images/baby-chicken.png" alt="a baby chick logo" width="75" height="75">
+                <h1>Nuggets</h1>
+            </div>
+            <div class="img-credit">
+                <p>Image by <a href="https://unsplash.com/@_rayson__" target="_blank" rel="noopener">Denis Rayson</a> via Unsplash.</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="content-top">
+                <div class="top-container">
+                    <p>
+                        This is not a real online service! You know you need something <br>
+                        like this in your life to help you realize your deepest dreams. <br>
+                        Sign up <em>now</em> to get started.
+                    </p>
+                    <p>
+                        You <em>know</em> you want to.
+                    </p>
+                </div>
+            </div>
+            <div class="form-area">
+                <form action="" method="post" id="nugget-form">
+                    <h2>Let's do this!</h2>
+                    <div class="form-container">
+                        <div class="form-left">
+                            <label class="label" for="first_name" aria-required="*">First Name <span>*</span></label>
+                            <input class="field" type="text" id="first_name" name="first_name" required>
+                            <label class="label" for="email" aria-required="*">Email <span>*</span></label>
+                            <input class="field" type="email" id="email" name="email" required>
+                            <label class="label" for="password" aria-required="*">Password <span>*</span></label>
+                            <input class="field password" type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-right">
+                            <label class="label" for="last_name" aria-required="*">Last Name <span>*</span></label>
+                            <input class="field" type="text" id="last_name" name="last_name">
+                            <label class="label" for="phone">Phone Number</label>
+                            <input class="field" type="tel" id="phone" name="phone">
+                            <label class="label" for="confirm_passowrd" aria-required="*">Confirm Password <span>*</span></label>
+                            <input class="field confirm-password" type="password" id="confirm_passowrd" name="confirm_passowrd" required>
+                        </div>
+                    </div>
+                </form>
+                <p>Nuggets so fresh you can hear them chirping.</p>
+            </div>
+            <div class="content-bottom">
+                <button form="nugget-form" type="submit" class="frm-btn">Create Account</button>
+                <p>Already have an account? Log In</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
